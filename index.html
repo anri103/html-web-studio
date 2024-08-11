@@ -8,190 +8,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="favicon.png">
 
     <!-- Site Title -->
     <title>Веб студия</title>
     <meta name="description"
         content="Веб студия Мы разрабатываем крутые сайты, настраиваем рекламу, создаём контент и помогаем Вашему бизнесу превзойти конкурентов! Заказать проект Портфолио Создание сайтов Сайт — это представительство Вашей фирмы или компании в Интернете. Даже если Ваша организация небольшая, наличие своего собственного веб-сайта придает Вашей фирме солидный имидж. Что мы делаем: Адаптивная верстка, Индивидуальный дизайн, Разработка">
-    <meta name="author" content="ANDREW">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="#top"></div>
+    <header class="header fixed-top">
 
-    <header class="header">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                <div class="navbar-brand" href="#">
+                    <div class="navbar-logo">
+                        <img src="img/logo-white.svg"
+                        width="30"
+                        height="30"
+                        alt="8saitov logo" />
+                    </div>
+                    <span class="d-none">8</span>
+                    <span>saitov.ru</span>
+                </div>
 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-toggle-nav-center" aria-controls="navbar-toggle-nav-center"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-toggle-nav-center" aria-controls="navbar-toggle-nav-center">
                     <span class="icon-bar top-bar"></span>
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbar-toggle-nav-center">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#top">Главная</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-us">О нас</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Услуги</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Цены</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Портфолио</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-button p-0 m-0">
-                        <li class="nav-item">
-                            <a href="#" class="btn btn-sm btn-primary"><i
-                                    class="far fa-envelope fz-16 mr-5 va-middle"></i>
-                                <span class="va-middle">Связаться</span></a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" id="navbar-toggle-nav-center" tabindex="-1">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us">О нас</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Услуги</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pricing">Цены</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Портфолио</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-button p-0 m-0">
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-send fs-16 mr-5 va-middle"></i>
+                                    <span class="va-middle">Связаться</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main class="main-container p-0">
 
-        <!-- ЗАГОЛОВОК -->
-        <section class="hero d-flex align-items-center vh-100 p-0 bg-img" style="background-image: url(img/ph-bg2.jpg);">
-
+        <!-- section-hero -->
+        <section class="section section-hero" style="background-image: url(img/ph-bg1.jpg);">
             <div class="container">
                 <div class="d-flex flex-column align-items-center text-center">
                     <h1>Веб студия</h1>
                     <p class="h1-subtitle">Разработка сайтов полного цикла</p>
-                    <p class="hero-text">Мы разрабатываем крутые сайты, настраиваем рекламу, создаём контент и
-                        помогаем
-                        Вашему бизнесу превзойти конкурентов!</p>
-                    <a class="btn btn-primary" href="#portfolio"><i class="fas fa-briefcase mr-10 fz-16"></i> <span>Наши
-                            работы</span></a>
+                    <p class="hero-text">Мы разрабатываем крутые сайты, настраиваем рекламу, создаём контент и помогаем Вашему бизнесу превзойти конкурентов!</p>
+                    <a class="btn btn-primary" href="#portfolio">
+                        <span>Наши работы</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- slider -->
-        <div class="position-relative pt-5">
-            <div class="slider-text">
-                <div class="slider-text-track">
-                    <div class="d-flex align-items-center">
-                        <div class="slider-text-item">
+        <!-- marquee-slider -->
+        <section class="section section-marquee">
+            <div class="marquee">
+                <div class="marquee-wrapper">
+                    <div class="marquee-slide">
+                        <div class="marquee-item">
                             <span>Разработка сайтов</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>SEO Продвижение</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>UX/UI Дизайн</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>Видео и промо ролики</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>Съемка 360° панорам</span>
                         </div>
-                        <div class="slider-text-item">
-                            <span>SMM & SMO</span>
+                        <div class="marquee-item">
+                            <span>SMM &amp; SMO</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>Техническая поддержка</span>
                         </div>
                     </div>
-                    <!-- Дубль -->
-                    <div class="d-flex align-items-center">
-                        <div class="slider-text-item">
+                    <div class="marquee-slide">
+                        <div class="marquee-item">
                             <span>Разработка сайтов</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>SEO Продвижение</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>UX/UI Дизайн</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>Видео и промо ролики</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>Съемка 360° панорам</span>
                         </div>
-                        <div class="slider-text-item">
-                            <span>SMM & SMO</span>
+                        <div class="marquee-item">
+                            <span>SMM &amp; SMO</span>
                         </div>
-                        <div class="slider-text-item">
+                        <div class="marquee-item">
                             <span>Техническая поддержка</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- О НАС -->
-        <section class="lg" id="about-us">
+        <!-- section-about -->
+        <section class="section section-about lg" id="about-us">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title mb-100">О нас</h2>
                 </div>
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-7">
-                        <img class="rounded-0" src="img/workers-it-company-working-computer.jpg" alt="">
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <div style="height: 60px;"></div>
+                                <img class="img-fluid rounded-0" src="img/about-01.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid rounded-0" src="img/about-02.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-5">
+                    
+                    <div class="col-lg-4 order-lg-first">
                         <div class="promo-box mb-45">
                             <div class="promo-container">
-                                <!-- <i class="fas fa-users promo-icon d-block mb-25 text-primary"></i> -->
                                 <h6 class="box-title mb-15">OUR EXPERTISE</h6>
-                                <p class="box-description fz-16">Quisque maximus a sem vitae auctor, blandit eu erat.
+                                <p class="fs-24 mb-30">Quisque maximus a sem vitae auctor, blandit eu erat.
+                                    Aliquam interdum pulvinar laoreet.</p>
+                                <p class="fs-16 mb-15">Quisque maximus a sem vitae auctor, blandit eu erat.
+                                    Aliquam interdum pulvinar laoreet. Vivamus ante sem, ornare a consectetur sit amet,
+                                    vitae lobortis magna malesuada.</p>
+                                <p class="fs-16 mb-15">Quisque maximus a sem vitae auctor, blandit eu erat.
                                     Aliquam interdum pulvinar laoreet. Vivamus ante sem, ornare a consectetur sit amet,
                                     vitae lobortis magna malesuada.</p>
                             </div>
                         </div>
-
-                        <div class="promo-box mb-0">
+                        <!-- <div class="promo-box mb-0">
                             <div class="promo-container">
                                 <h6 class="box-title mb-15">OUR EXPERTISE</h6>
-                                <p class="box-description fz-16">Quisque maximus a sem vitae auctor, blandit eu erat.
+                                <p class="box-description fs-16">Quisque maximus a sem vitae auctor, blandit eu erat.
                                     Aliquam interdum pulvinar laoreet. Vivamus ante sem, ornare a consectetur sit amet,
                                     vitae lobortis magna malesuada.</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- УСЛУГИ -->
-        <section class="lg bg-white" id="services">
+        <!-- section-services -->
+        <section class="section section-services lg bg-white" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title mb-100">Услуги</h2>
                 </div>
-                <div class="row g-4">
+                <div class="row gy-4">
                     <div class="col-md-6 col-xl-4">
                         <div class="promo-box promo-center">
                             <div class="promo-big mb-25">
-                                <i class="fas fa-laptop promo-icon text-primary fz-36"></i>
+                                <i class="bi bi-laptop promo-icon text-primary"></i>
                             </div>
                             <h6 class="box-title mb-15">WEB DESIGN</h6>
                             <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
@@ -202,7 +217,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="promo-box promo-center">
                             <div class="promo-big mb-25">
-                                <i class="fas fa-code promo-icon text-primary fz-36"></i>
+                                <i class="bi bi-code-slash promo-icon text-primary"></i>
                             </div>
                             <h6 class="box-title mb-15">WEB DEVELOPMENT</h6>
                             <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
@@ -213,7 +228,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="promo-box promo-center">
                             <div class="promo-big mb-25">
-                                <i class="fas fa-bullhorn promo-icon text-primary fz-36"></i>
+                                <i class="bi bi-megaphone promo-icon text-primary"></i>
                             </div>
                             <h6 class="box-title mb-15">MARKETING</h6>
                             <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
@@ -224,7 +239,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="promo-box promo-center">
                             <div class="promo-big mb-25">
-                                <i class="fas fa-share-alt promo-icon text-primary fz-36"></i>
+                                <i class="bi bi-hand-thumbs-up promo-icon text-primary"></i>
                             </div>
                             <h6 class="box-title mb-15">SOCIAL MEDIA</h6>
                             <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
@@ -235,7 +250,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="promo-box promo-center">
                             <div class="promo-big mb-25">
-                                <i class="fas fa-pencil-ruler promo-icon text-primary fz-36"></i>
+                                <i class="bi bi-highlighter promo-icon text-primary"></i>
                             </div>
                             <h6 class="box-title mb-15">GRAPHIC DESIGN</h6>
                             <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
@@ -246,7 +261,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="promo-box promo-center">
                             <div class="promo-big mb-25">
-                                <i class="fas fa-globe promo-icon text-primary fz-36"></i>
+                                <i class="bi bi-globe2 promo-icon text-primary"></i>
                             </div>
                             <h6 class="box-title mb-15">SEO</h6>
                             <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
@@ -257,88 +272,8 @@
             </div>
         </section>
 
-        <!-- ЦЕНЫ -->
-        <section class="lg" id="pricing">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-title mb-100">Цены</h2>
-                </div>
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-4">
-                        <div class="card b-1 border-light-grey text-center mb-0">
-                            <div class="card-body px-0">
-                                <h6 class="fz-20 mb-30">Базовый</h6>
-                                <div class="p-20 bg-light mb-40">
-                                    <span class="fz-24 text-black">199 руб/мес</span>
-                                </div>
-                                <ul class="list-group mb-30">
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>Graphic Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>UI/UX Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-times mr-10 text-danger"></i><span>Web Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-times mr-10 text-danger"></i><span>Web Development</span></li>
-                                </ul>
-                                <a href="#" class="btn btn-outline-primary"><i class="fas fa-briefcase mr-5"></i>
-                                    <span>Подробнее</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card featured-pt b-1 border-light-grey text-center mb-0">
-                            <div class="card-body px-0">
-                                <h6 class="fz-20 mb-30">Стандарт</h6>
-                                <div class="p-20 bg-primary mb-40">
-                                    <span class="fz-24 text-white">499 руб/мес</span>
-                                </div>
-                                <ul class="list-group mb-30">
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>Graphic Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>UI/UX Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>Web Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-times mr-10 text-danger"></i><span>Web Development</span></li>
-                                </ul>
-                                <a href="#" class="btn btn-primary"><i class="fas fa-briefcase mr-5"></i>
-                                    <span>Подробнее</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card b-1 border-light-grey text-center mb-0">
-                            <div class="card-body px-0">
-                                <h6 class="fz-20 mb-30">Продвинутый</h6>
-                                <div class="p-20 bg-light mb-40">
-                                    <span class="fz-24 text-black">999 руб/мес</span>
-                                </div>
-                                <ul class="list-group mb-30">
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>Graphic Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>UI/UX Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>Web Design</span></li>
-                                    <li class="list-group-item b-0 bg-transparent"><i
-                                            class="fas fa-check mr-10 text-success"></i><span>Web Development</span>
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn btn-outline-primary"><i class="fas fa-briefcase mr-5"></i>
-                                    <span>Подробнее</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- НАШИ РАБОТЫ -->
-        <section class="lg bg-white" id="portfolio">
+        <!-- section-portfolio -->
+        <section class="section section-portfolio lg" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title mb-100">Наши работы</h2>
@@ -468,31 +403,177 @@
             </div>
         </section>
 
+        <!-- section-pricing -->
+        <section class="section section-pricing lg bg-white" id="pricing">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title mb-100">Цены</h2>
+                </div>
+                <div class="row gy-4 align-items-center">
+                    <div class="col-md-4">
+                        <div class="card b-1 border-light-grey text-center mb-0">
+                            <div class="card-body px-0">
+                                <h6 class="mb-30">Базовый</h6>
+                                <div class="p-20 bg-light mb-40">
+                                    <span class="fs-24 text-black">199 руб/мес</span>
+                                </div>
+                                <ul class="list-group mb-30">
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>Graphic Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>UI/UX Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-x mr-10 text-danger"></i>
+                                        <span>Web Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-x mr-10 text-danger"></i>
+                                        <span>Web Development</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-primary">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card featured-pt b-1 border-light-grey text-center mb-0">
+                            <div class="card-body px-0">
+                                <h6 class="mb-30">Стандарт</h6>
+                                <div class="p-20 bg-primary mb-40">
+                                    <span class="fs-24 text-white">499 руб/мес</span>
+                                </div>
+                                <ul class="list-group mb-30">
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>Graphic Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>UI/UX Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>Web Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-x mr-10 text-danger"></i>
+                                        <span>Web Development</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card b-1 border-light-grey text-center mb-0">
+                            <div class="card-body px-0">
+                                <h6 class="mb-30">Продвинутый</h6>
+                                <div class="p-20 bg-light mb-40">
+                                    <span class="fs-24 text-black">999 руб/мес</span>
+                                </div>
+                                <ul class="list-group mb-30">
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>Graphic Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>UI/UX Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>Web Design</span>
+                                    </li>
+                                    <li class="list-group-item b-0 bg-transparent">
+                                        <i class="bi bi-check2 mr-10 text-success"></i>
+                                        <span>Web Development</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-primary">
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bg-white">
-        <div class="container-fluid">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-4 text-center text-md-start">
-                    <img src="img/logo.png" class="footer-logo" alt="">
-                </div>
-                <div class="col-md-8 text-center text-md-end">
-                    <p>© 2022 MIPO by <a href="#">KingStudio</a></p>
+    <footer class="footer bg-body-dark dark">
+
+        <div class="footer-wrapper">
+            <div class="footer-widget-area bg-transparent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="widget text-center">
+                                <ul class="list-unstyled list-has-link menu-list mb-0">
+                                    <li class="mb-20 fs-14 title-color fw-medium">LEGAL</li>
+                                    <li><a href="#x">Cookie Policy</a></li>
+                                    <li><a href="#x">Privacy Policy</a></li>
+                                    <li class="mb-0"><a href="#x">Terms &amp; Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="widget text-center">
+                                <img src="img/logo-white.svg" class="footer-logo" alt="">
+                                <h6 class="widget-title mb-20 fs-14 title-color fw-medium">GET IN TOUCH</h6>
+                                <a href="mailto:hello@yoursite.com" class="d-block mb-20 fs-26 fw-bold text-white opc-100">hello@yoursite.com</a>
+                                <p>
+                                    <a href="#x" class="ext-link mr-20"><i class="bi bi-whatsapp fs-20"></i></a>
+                                    <a href="#x" class="text-link mr-20"><i class="bi bi-whatsapp fs-20"></i></a>
+                                    <a href="#x" class="text-link mr-20"><i class="bi bi-whatsapp fs-20"></i></a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3">
+                            <div class="widget text-center">
+                                <ul class="list-unstyled list-has-link menu-list mb-0">
+                                    <li class="mb-20 fs-14 title-color fw-medium">USEFUL LINKS</li>
+                                    <li><a href="#x">About Us</a></li>
+                                    <li><a href="#x">Portfolio</a></li>
+                                    <li class="mb-0"><a href="#x">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="bg-body-dark dark text-center">
+            <div class="container">
+                <p class="fs-16">© 2022 8saitov</p>
+            </div>
+        </div>
+
     </footer>
 
     <button type="button" id="back-top"
         class="btn btn-icon btn-circle btn-outline-secondary bg-body btn-floating raised-sm">
-        <i class="fas fa-chevron-up text-primary"></i>
+        <i class="bi bi-chevron-up text-primary"></i>
     </button>
 
-
     <!-- JavaScript -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/scroll-top.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/fancybox/fancybox.umd.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
