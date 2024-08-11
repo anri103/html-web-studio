@@ -140,6 +140,8 @@
 header {
     padding: 30px 0;
     background-color: transparent;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 header.js-header {
@@ -177,6 +179,7 @@ header.js-header .navbar-logo {
     display: inline-block;
     max-width: 100%;
     height: auto;
+    transform: rotate(90deg);
     transition: 0.3s ease-in-out;
 }
 
@@ -347,4 +350,12 @@ header.js-header .navbar-logo img {
     100% {
         transform: translateX(-100%);
     }
+}
+
+footer {
+    padding: 0;
+}
+
+.footer-copyright {
+    padding: 3rem 0;
 }
