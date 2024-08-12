@@ -21,9 +21,10 @@
 
 <body>
 
+    <!-- header -->
     <header class="header fixed-top">
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="navbar-brand" href="#">
                     <div class="navbar-logo">
@@ -44,7 +45,10 @@
 
                 <div class="offcanvas offcanvas-end" id="navbar-toggle-nav-center" tabindex="-1">
                     <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        <button type="button" class="btn border-0 p-0" data-bs-dismiss="offcanvas">
+                            <i class="bi bi-chevron-left mr-5 va-middle"></i>
+                            <span>Назад</span>
+                        </button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto">
@@ -57,11 +61,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#portfolio">Портфолио</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pricing">Цены</a>
-                            </li>
                         </ul>
-                        <ul class="navbar-button p-0 m-0">
+                        <ul class="navbar-button">
                             <li class="nav-item">
                                 <a href="#" class="btn btn-sm btn-outline-primary">
                                     <i class="bi bi-send fs-16 mr-5 va-middle"></i>
@@ -75,6 +76,7 @@
 
     </header>
 
+    <!-- main -->
     <main class="main">
 
         <!-- section-hero -->
@@ -146,7 +148,7 @@
         </section>
 
         <!-- section-about -->
-        <section class="section section-about lg" id="about-us">
+        <section class="section section-about py-lg" id="about-us">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title mb-100">О нас</h2>
@@ -194,7 +196,7 @@
         </section>
 
         <!-- section-services -->
-        <section class="section section-services lg bg-white" id="services">
+        <section class="section section-services py-lg bg-white" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title mb-100">Услуги</h2>
@@ -270,7 +272,7 @@
         </section>
 
         <!-- section-portfolio -->
-        <section class="section section-portfolio lg" id="portfolio">
+        <section class="section section-portfolio py-lg" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title mb-100">Наши работы</h2>
@@ -280,7 +282,7 @@
                         <div class="project">
                             <figure class="portfolio-item">
                                 <div class="hovereffect effect-overlay">
-                                    <img class="img-responsive" src="img/ph1.jpg" alt="">
+                                    <img class="img-fluid" src="img/ph1.jpg" alt="">
                                     <div class="overlay">
                                         <div class="hovereffect-title">
                                             <a href="#" class="project-title-wrapper">
@@ -300,7 +302,7 @@
                         <div class="project">
                             <figure class="portfolio-item">
                                 <div class="hovereffect effect-overlay">
-                                    <img class="img-responsive" src="img/ph2.jpg" alt="">
+                                    <img class="img-fluid" src="img/ph2.jpg" alt="">
                                     <div class="overlay">
                                         <div class="hovereffect-title">
                                             <a href="#" class="project-title-wrapper">
@@ -320,7 +322,7 @@
                         <div class="project">
                             <figure class="portfolio-item">
                                 <div class="hovereffect effect-overlay">
-                                    <img class="img-responsive" src="img/ph3.jpg" alt="">
+                                    <img class="img-fluid" src="img/ph3.jpg" alt="">
                                     <div class="overlay">
                                         <div class="hovereffect-title">
                                             <a href="#" class="project-title-wrapper">
@@ -340,7 +342,7 @@
                         <div class="project">
                             <figure class="portfolio-item">
                                 <div class="hovereffect effect-overlay">
-                                    <img class="img-responsive" src="img/ph4.jpg" alt="">
+                                    <img class="img-fluid" src="img/ph4.jpg" alt="">
                                     <div class="overlay">
                                         <div class="hovereffect-title">
                                             <a href="#" class="project-title-wrapper">
@@ -360,7 +362,7 @@
                         <div class="project">
                             <figure class="portfolio-item">
                                 <div class="hovereffect effect-overlay">
-                                    <img class="img-responsive" src="img/ph5.jpg" alt="">
+                                    <img class="img-fluid" src="img/ph5.jpg" alt="">
                                     <div class="overlay">
                                         <div class="hovereffect-title">
                                             <a href="#" class="project-title-wrapper">
@@ -380,7 +382,7 @@
                         <div class="project">
                             <figure class="portfolio-item">
                                 <div class="hovereffect effect-overlay">
-                                    <img class="img-responsive" src="img/ph6.jpg" alt="">
+                                    <img class="img-fluid" src="img/ph6.jpg" alt="">
                                     <div class="overlay">
                                         <div class="hovereffect-title">
                                             <a href="#" class="project-title-wrapper">
@@ -400,149 +402,44 @@
             </div>
         </section>
 
-        <!-- section-pricing -->
-        <section class="section section-pricing lg bg-white" id="pricing">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-title mb-100">Цены</h2>
-                </div>
-                <div class="row gy-4 align-items-center">
-                    <div class="col-md-4">
-                        <div class="card b-1 border-light-grey text-center mb-0">
-                            <div class="card-body px-0">
-                                <h6 class="mb-30">Базовый</h6>
-                                <div class="p-20 bg-light mb-40">
-                                    <span class="fs-24 text-black">199 руб/мес</span>
-                                </div>
-                                <ul class="list-group mb-30">
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>Graphic Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>UI/UX Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-x mr-10 text-danger"></i>
-                                        <span>Web Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-x mr-10 text-danger"></i>
-                                        <span>Web Development</span>
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn btn-outline-primary">
-                                    <span>Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card featured-pt b-1 border-light-grey text-center mb-0">
-                            <div class="card-body px-0">
-                                <h6 class="mb-30">Стандарт</h6>
-                                <div class="p-20 bg-primary mb-40">
-                                    <span class="fs-24 text-white">499 руб/мес</span>
-                                </div>
-                                <ul class="list-group mb-30">
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>Graphic Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>UI/UX Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>Web Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-x mr-10 text-danger"></i>
-                                        <span>Web Development</span>
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn btn-primary">
-                                    <span>Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card b-1 border-light-grey text-center mb-0">
-                            <div class="card-body px-0">
-                                <h6 class="mb-30">Продвинутый</h6>
-                                <div class="p-20 bg-light mb-40">
-                                    <span class="fs-24 text-black">999 руб/мес</span>
-                                </div>
-                                <ul class="list-group mb-30">
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>Graphic Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>UI/UX Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>Web Design</span>
-                                    </li>
-                                    <li class="list-group-item b-0 bg-transparent">
-                                        <i class="bi bi-check2 mr-10 text-success"></i>
-                                        <span>Web Development</span>
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn btn-outline-primary">
-                                    <span>Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
+    <!-- footer -->
     <footer class="footer bg-body-dark dark">
 
         <div class="footer-wrapper">
-            <div class="footer-widget-area bg-transparent">
+            <div class="footer-widget-area">
                 <div class="container">
                     <div class="row gy-4">
                         <div class="col-xl-6">
                             <div class="widget text-center">
                                 <img src="img/logo-white.svg" class="footer-logo" alt="">
-                                <h6 class="widget-title mb-20 fs-14 title-color fw-medium">GET IN TOUCH</h6>
-                                <a href="mailto:hello@yoursite.com" class="d-block mb-20 fs-26 fw-bold text-white opc-100">hello@yoursite.com</a>
-                                <p>
-                                    <a href="#x" class="ext-link mr-20"><i class="bi bi-whatsapp fs-20"></i></a>
-                                    <a href="#x" class="text-link mr-20"><i class="bi bi-whatsapp fs-20"></i></a>
-                                    <a href="#x" class="text-link mr-20"><i class="bi bi-whatsapp fs-20"></i></a>
-                                </p>
+                                <div class="h6 widget-title">GET IN TOUCH</div>
+                                <a href="mailto:hello@yoursite.com" class="d-block mb-20 fs-26 fw-bold text-white">hello@yoursite.com</a>
+                                <div class="footer-social">
+                                    <a href="#x" class="text-link"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#x" class="text-link"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#x" class="text-link"><i class="bi bi-whatsapp"></i></a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-3 order-lg-first">
                             <div class="widget text-center">
+                                <div class="h6 widget-title">LEGAL</div>
                                 <ul class="list-unstyled list-has-link menu-list mb-0">
-                                    <li class="mb-20 fs-14 title-color fw-medium">LEGAL</li>
                                     <li><a href="#x">Cookie Policy</a></li>
                                     <li><a href="#x">Privacy Policy</a></li>
-                                    <li class="mb-0"><a href="#x">Terms &amp; Conditions</a></li>
+                                    <li><a href="#x">Terms &amp; Conditions</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3">
                             <div class="widget text-center">
+                                <div class="h6 widget-title">USEFUL LINKS</div>
                                 <ul class="list-unstyled list-has-link menu-list mb-0">
-                                    <li class="mb-20 fs-14 title-color fw-medium">USEFUL LINKS</li>
                                     <li><a href="#x">About Us</a></li>
                                     <li><a href="#x">Portfolio</a></li>
-                                    <li class="mb-0"><a href="#x">Contact Us</a></li>
+                                    <li><a href="#x">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -551,7 +448,7 @@
             </div>
         </div>
 
-        <div class="footer-copyright bg-body-dark dark text-center">
+        <div class="footer-copyright">
             <div class="container">
                 <p class="fs-16">© 2022 8saitov</p>
             </div>
@@ -559,9 +456,9 @@
 
     </footer>
 
-    <button type="button" id="back-top"
-        class="btn btn-icon btn-circle btn-outline-secondary bg-body btn-floating raised-sm">
-        <i class="bi bi-chevron-up text-primary"></i>
+    <!-- top-button -->
+    <button type="button" id="back-top" class="btn btn-floating">
+        <i class="bi bi-chevron-up"></i>
     </button>
 
     <!-- JavaScript -->

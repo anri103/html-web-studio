@@ -2,9 +2,9 @@
 const scrollBtn = document.querySelector('#back-top');
 const btnVisibility = () => {
     if (window.scrollY > 400) {
-        scrollBtn.classList.add('show');
+        scrollBtn.classList.add('showing');
     } else {
-        scrollBtn.classList.remove('show');
+        scrollBtn.classList.remove('showing');
     }
 };
 document.addEventListener('scroll', () => {
