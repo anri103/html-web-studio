@@ -1,5 +1,4 @@
 @import url("vendors/bootstrap/bootstrap.min.css");
-/* @import url("vendors/framework.min.css"); */
 @import url("vendors/swiper/swiper-bundle.min.css");
 @import url("vendors/fancybox/fancybox.css");
 @import url("fonts/HalvarBreit-Rg/style.css");
@@ -10,57 +9,57 @@
 @import url("fonts/bootstrap-icons-1.11.3/bootstrap-icons.min.css");
 
 :root {
-    --theme-black: #000;
-    --theme-white: #fff;
-    --theme-gray: #636363;
-    --theme-gray-dark: #343a40;
-    --theme-gray-100: #f8f9fa;
-    --theme-gray-200: #e9ecef;
-    --theme-gray-300: #dee2e6;
-    --theme-gray-400: #ced4da;
-    --theme-gray-500: #adb5bd;
-    --theme-gray-600: #6c757d;
-    --theme-gray-700: #495057;
-    --theme-gray-800: #343a40;
-    --theme-gray-900: #212529;
-    --theme-primary: #111;
-    --theme-secondary: #6c757d;
-    --theme-light: #f8f9fa;
-    --theme-dark: #212529;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #636363;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #111;
+    --bs-secondary: #6c757d;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
     --bs-primary-rgb: 17, 17, 17;
     --bs-secondary-rgb: 108, 117, 125;
-    --theme-light-rgb: 248, 249, 250;
-    --theme-dark-rgb: 205, 196, 179;
-    --theme-font-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --theme-font-title: "Halvar Breitschrift", serif;
-    --theme-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --theme-body-font-family: var(--theme-font-sans-serif);
-    --theme-body-font-size: 1rem;
-    --theme-body-font-weight: 400;
-    --theme-body-line-height: 1.5;
-    --theme-body-color: #636363;
-    --theme-body-color-rgb: 33, 37, 41;
-    --theme-body-bg: #fafafa;
-    --theme-body-bg-rgb: 250, 250, 250;
-    --theme-heading-color: #000;
-    --theme-link-color: #1e3c6f;
-    --theme-link-color-rgb: 30, 60, 111;
-    --theme-link-decoration: underline;
-    --theme-link-hover-color: #031432;
-    --theme-link-hover-color-rgb: 3, 20, 50;
-    --theme-border-width: 1px;
-    --theme-border-style: solid;
-    --theme-border-color: #dee2e6;
-    --theme-border-color-translucent: rgba(0, 0, 0, 0.175);
-    --theme-border-radius: 0;
-    --theme-border-radius-sm: 0;
-    --theme-border-radius-lg: 0;
-    --theme-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 205, 196, 179;
+    --bs-font-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-title: "Halvar Breitschrift", serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #636363;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg: #fafafa;
+    --bs-body-bg-rgb: 250, 250, 250;
+    --bs-heading-color: #000;
+    --bs-link-color: #1e3c6f;
+    --bs-link-color-rgb: 30, 60, 111;
+    --bs-link-decoration: underline;
+    --bs-link-hover-color: #031432;
+    --bs-link-hover-color-rgb: 3, 20, 50;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0;
+    --bs-border-radius-sm: 0;
+    --bs-border-radius-lg: 0;
+    --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     --swiper-theme-color: #031432;
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
-    font-family: var(--theme-font-title);
+    font-family: var(--bs-font-title);
     font-weight: 400;
     letter-spacing: .01rem;
     text-transform: uppercase;
@@ -129,7 +128,7 @@ h6, .h6 {
 .btn {
     --bs-btn-padding-y: 0.875rem;
     --bs-btn-padding-x: 2rem;
-    --bs-btn-font-family: var(--theme-font-title);
+    --bs-btn-font-family: var(--bs-font-title);
     --bs-btn-font-size: 1rem;
     --bs-btn-font-weight: 500;
     --bs-btn-line-height: 1.5;
@@ -227,10 +226,6 @@ h6, .h6 {
 }
 
 /* base */
-
-.va-middle {
-    vertical-align: middle !important;
-}
 
 .mr-5 {
     margin-right: 5px !important;
@@ -383,7 +378,7 @@ h6, .h6 {
     align-items: center;
     gap: 10px;
     width: 230px;
-    font-family: var(--theme-font-title);
+    font-family: var(--bs-font-title);
     font-size: 2rem;
     font-weight: 400;
     padding: 0;
@@ -444,7 +439,7 @@ h6, .h6 {
 
 .nav-link {
     color: #000;
-    font-family: var(--theme-font-title);
+    font-family: var(--bs-font-title);
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: .01rem;
@@ -513,7 +508,7 @@ h6, .h6 {
 }
 
 .h1-subtitle {
-    font-family: var(--theme-font-title);
+    font-family: var(--bs-font-title);
     font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -600,7 +595,7 @@ h6, .h6 {
 .marquee-item {
     width: max-content;
     padding: 0 3rem;
-    font-family: var(--theme-font-title);
+    font-family: var(--bs-font-title);
     color: #636363;
     font-size: 1.5rem;
     font-weight: 500;
@@ -639,6 +634,11 @@ h6, .h6 {
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 0;
     transition: all 0.2s ease-in-out;
+}
+
+.promo-box:hover {
+    border-color: transparent;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .promo-center {
@@ -814,17 +814,24 @@ h6, .h6 {
     font-weight: 600;
 }
 
-/* section-pricing */
+/* section-contacts */
+
+.section-contacts {
+    position: relative;
+}
+
+.contacts-map-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
 
 /* footer */
 
 .footer {
     color: #fff;
-    padding: 0;
-}
-
-.bg-body-dark {
-    background-color: #191919 !important;
+    background-color: #191919
 }
 
 .footer-widget-area {
@@ -832,36 +839,43 @@ h6, .h6 {
     border-bottom: 1px solid rgba(55,55,55,0.5);
 }
 
-.footer-widget-area .widget-title {
+.footer-widget-area .widget .widget-title {
+    font-family: var(--bs-font-title);
     font-size: 1.125rem;
     font-weight: 500;
+    letter-spacing: .01rem;
+    text-transform: uppercase;
     margin-bottom: 25px;
 }
 
-.footer-social {
+.footer-widget-area .widget .footer-social {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.footer-social .text-link {
+.footer-widget-area .widget .footer-social a {
     color: #fff;
     opacity: 0.65;
+    text-decoration: none;
 }
 
-.menu-list li {
+.footer-widget-area .widget .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-widget-area .widget .menu-list li:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.menu-list li:last-child {
-    margin-bottom: 0;
-}
-
-.menu-list a {
+.footer-widget-area .widget .menu-list a {
     color: #fff;
     opacity: 0.75;
     font-size: 14px;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .footer-copyright {

@@ -26,18 +26,16 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <div class="navbar-brand" href="#">
+                <a href="#hero" class="navbar-brand">
                     <div class="navbar-logo">
-                        <img src="img/logo-white.svg"
-                        width="30"
-                        height="30"
-                        alt="8saitov logo" />
+                        <img src="img/logo-white.svg" width="30" height="30" alt="8saitov logo" />
                     </div>
                     <span class="d-none">8</span>
                     <span>saitov.ru</span>
-                </div>
+                </a>
 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar-toggle-nav-center" aria-controls="navbar-toggle-nav-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbar-toggle-nav-center" aria-controls="navbar-toggle-nav-center">
                     <span class="icon-bar top-bar"></span>
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
@@ -46,27 +44,31 @@
                 <div class="offcanvas offcanvas-end" id="navbar-toggle-nav-center" tabindex="-1">
                     <div class="offcanvas-header">
                         <button type="button" class="btn border-0 p-0" data-bs-dismiss="offcanvas">
-                            <i class="bi bi-chevron-left mr-5 va-middle"></i>
+                            <i class="bi bi-chevron-left mr-5"></i>
                             <span>Назад</span>
                         </button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#about-us">О нас</a>
+                                <a href="#about-us" class="nav-link">О нас</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">Услуги</a>
+                                <a href="#services" class="nav-link">Услуги</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Портфолио</a>
+                                <a href="#portfolio" class="nav-link">Портфолио</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contacts" class="nav-link">Контакты</a>
                             </li>
                         </ul>
                         <ul class="navbar-button">
                             <li class="nav-item">
                                 <a href="#" class="btn btn-sm btn-outline-primary">
-                                    <i class="bi bi-send fs-16 mr-5 va-middle"></i>
-                                    <span class="va-middle">Связаться</span></a>
+                                    <i class="bi bi-send fs-16 mr-5"></i>
+                                    <span>Связаться</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -80,13 +82,14 @@
     <main class="main">
 
         <!-- section-hero -->
-        <section class="section section-hero" style="background-image: url(img/ph-bg1.jpg);">
+        <section class="section section-hero" id="hero" style="background-image: url(img/ph-bg1.jpg);">
             <div class="container">
                 <div class="d-flex flex-column align-items-center text-center">
                     <h1>Веб студия</h1>
                     <p class="h1-subtitle">Разработка сайтов полного цикла</p>
-                    <p class="hero-text">Мы разрабатываем крутые сайты, настраиваем рекламу, создаём контент и помогаем Вашему бизнесу превзойти конкурентов!</p>
-                    <a class="btn btn-primary" href="#portfolio">
+                    <p class="hero-text">Мы разрабатываем крутые сайты, настраиваем рекламу, создаём контент и помогаем
+                        Вашему бизнесу превзойти конкурентов!</p>
+                    <a href="#portfolio" class="btn btn-primary">
                         <span>Наши работы</span>
                     </a>
                 </div>
@@ -159,14 +162,14 @@
                         <div class="row">
                             <div class="col-6">
                                 <div style="height: 60px;"></div>
-                                <img class="img-fluid rounded-0" src="img/about-01.jpg" alt="">
+                                <img class="img-fluid" src="img/about-01.jpg" alt="">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid rounded-0" src="img/about-02.jpg" alt="">
+                                <img class="img-fluid" src="img/about-02.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-4 order-lg-first">
                         <div class="promo-box mb-45">
                             <div class="promo-container">
@@ -402,58 +405,74 @@
             </div>
         </section>
 
-    </main>
-
-    <!-- footer -->
-    <footer class="footer bg-body-dark dark">
-
-        <div class="footer-wrapper">
-            <div class="footer-widget-area">
-                <div class="container">
-                    <div class="row gy-4">
-                        <div class="col-xl-6">
-                            <div class="widget text-center">
-                                <img src="img/logo-white.svg" class="footer-logo" alt="">
-                                <div class="h6 widget-title">GET IN TOUCH</div>
-                                <a href="mailto:hello@yoursite.com" class="d-block mb-20 fs-26 fw-bold text-white">hello@yoursite.com</a>
-                                <div class="footer-social">
-                                    <a href="#x" class="text-link"><i class="bi bi-whatsapp"></i></a>
-                                    <a href="#x" class="text-link"><i class="bi bi-whatsapp"></i></a>
-                                    <a href="#x" class="text-link"><i class="bi bi-whatsapp"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 order-lg-first">
-                            <div class="widget text-center">
-                                <div class="h6 widget-title">LEGAL</div>
-                                <ul class="list-unstyled list-has-link menu-list mb-0">
-                                    <li><a href="#x">Cookie Policy</a></li>
-                                    <li><a href="#x">Privacy Policy</a></li>
-                                    <li><a href="#x">Terms &amp; Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="widget text-center">
-                                <div class="h6 widget-title">USEFUL LINKS</div>
-                                <ul class="list-unstyled list-has-link menu-list mb-0">
-                                    <li><a href="#x">About Us</a></li>
-                                    <li><a href="#x">Portfolio</a></li>
-                                    <li><a href="#x">Contact Us</a></li>
-                                </ul>
+        <!-- section-contacts -->
+        <section class="section section-contacts py-0" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <div style="height: 450px;"></div>
+                        <div class="contacts-map-wrapper">
+                            <div style="position:relative;overflow:hidden;">
+                                <a href="https://yandex.ru/maps/org/8saitov_ru_sayty_vizitki/31282502858/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">8saitov.ru - Сайты-визитки</a>
+                                <a href="https://yandex.ru/maps/213/moscow/category/web_design_studio/184105736/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Студия веб-дизайна в Москве</a>
+                                <a href="https://yandex.ru/maps/213/moscow/category/creating_of_virtual_tours_and_panoramas/160180737191/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Съёмка виртуальных туров и панорам в Москве</a>
+                                <iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.534250%2C55.741143&mode=search&oid=31282502858&ol=biz&sctx=ZAAAAAgBEAAaKAoSCXTrNT0oxEJAEYZxN4jW3ktAEhIJjSYXY2Adlz8RrkZ2pWWkfj8iBgABAgMEBSgKOABAhZIHSAFiHnJlbGV2X3NlcnZpY2VfYXJlYV9wZXJjZW50PTEwMGoCcnWdAc3MTD2gAQCoAQC9AQT%2F6svCAQXKudTEdIICJjhzYWl0b3YucnUgLSDQodCw0LnRgtGLLdCy0LjQt9C40YLQutC4igIAkgIAmgIMZGVza3RvcC1tYXBz&sll=37.534250%2C55.741143&source=mapframe&sspn=0.045147%2C0.014962&text=8saitov.ru%20-%20%D0%A1%D0%B0%D0%B9%D1%82%D1%8B-%D0%B2%D0%B8%D0%B7%D0%B8%D1%82%D0%BA%D0%B8&um=constructor%3A6636cd4c3a9fc001d8596acd257ded5ed834ff3df792fa4bafdf7b1339b512f1&utm_source=mapframe&z=15" width="100%" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-widget-area">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-6">
+                        <div class="widget text-center">
+                            <img src="img/logo-white.svg" class="footer-logo" alt="logo">
+                            <div class="widget-title">GET IN TOUCH</div>
+                            <a href="mailto:hello@yoursite.com"
+                                class="d-block mb-20 fs-26 fw-bold text-white">hello@yoursite.com</a>
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 order-lg-first">
+                        <div class="widget text-center">
+                            <div class="widget-title">LEGAL</div>
+                            <ul class="menu-list">
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="widget text-center">
+                            <div class="widget-title">USEFUL LINKS</div>
+                            <ul class="menu-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-copyright">
             <div class="container">
                 <p class="fs-16">© 2022 8saitov</p>
             </div>
         </div>
-
     </footer>
 
     <!-- top-button -->
