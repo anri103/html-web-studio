@@ -267,6 +267,29 @@ h6, .h6 {
     font-size: 26px !important;
 }
 
+.icon-lg {
+    height: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+}
+
+.icon-shape {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .border-end-md {
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+    .border-bottom-md-0 {
+        border-bottom: 0 !important;
+    }
+}
+
 /* swiper */
 
 .swiper {
@@ -818,13 +841,6 @@ h6, .h6 {
 
 .section-contacts {
     position: relative;
-}
-
-.contacts-map-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
 }
 
 /* footer */
