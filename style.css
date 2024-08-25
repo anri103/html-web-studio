@@ -220,6 +220,11 @@
 
 /* card */
 
+.card {
+    --bs-card-border-radius: 0.5rem;
+    --bs-card-inner-border-radius: calc(var(--bs-card-border-radius) - (var(--bs-card-border-width)));
+}
+
 .card-title {
     color: #000;
     font-family: var(--bs-font-title);
@@ -228,6 +233,10 @@
     line-height: 1.25;
     letter-spacing: .01em;
     text-transform: uppercase;
+}
+
+.card-footer:last-child {
+    border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }
 
 /* swiper */
@@ -524,6 +533,7 @@
     --bs-card-spacer-x: 2rem;
     --bs-card-cap-padding-x: 2rem;
     --bs-card-cap-bg: var(--bs-card-bg);
+    height: 100%;
     font-size: 0.875rem;
 }
 
@@ -531,14 +541,9 @@
     padding-top: 2.5rem;
 }
 
-.card-services .card-title {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.card-services .card-title i.bi {
+.card-services .card-icon {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .card-services .card-footer {
@@ -558,6 +563,11 @@
 
 .section-portfolio {
     position: relative;
+}
+
+.card-project {
+    --bs-card-spacer-y: 2.5rem;
+    --bs-card-spacer-x: 2rem;
 }
 
 /* section-contacts */
