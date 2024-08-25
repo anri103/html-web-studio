@@ -44,7 +44,7 @@
                 <div class="offcanvas offcanvas-end" id="navbar-toggle-nav-center" tabindex="-1">
                     <div class="offcanvas-header">
                         <button type="button" class="btn border-0 p-0" data-bs-dismiss="offcanvas">
-                            <i class="bi bi-chevron-left mr-5"></i>
+                            <i class="bi bi-chevron-left"></i>
                             <span>Назад</span>
                         </button>
                     </div>
@@ -66,7 +66,7 @@
                         <ul class="navbar-button">
                             <li class="nav-item">
                                 <a href="#" class="btn btn-sm btn-outline-primary">
-                                    <i class="bi bi-send fs-16 mr-5"></i>
+                                    <i class="bi bi-send"></i>
                                     <span>Связаться</span>
                                 </a>
                             </li>
@@ -98,50 +98,29 @@
 
         <!-- marquee-slider -->
         <section class="section section-marquee">
-            <div class="marquee">
-                <div class="marquee-wrapper">
-                    <div class="marquee-slide">
+            <div class="swiper swiperMarquee">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="marquee-item">
                             <span>Разработка сайтов</span>
-                        </div>
-                        <div class="marquee-item">
-                            <span>SEO Продвижение</span>
-                        </div>
-                        <div class="marquee-item">
-                            <span>UX/UI Дизайн</span>
-                        </div>
-                        <div class="marquee-item">
-                            <span>Видео и промо ролики</span>
-                        </div>
-                        <div class="marquee-item">
-                            <span>Съемка 360° панорам</span>
-                        </div>
-                        <div class="marquee-item">
-                            <span>SMM &amp; SMO</span>
-                        </div>
-                        <div class="marquee-item">
-                            <span>Техническая поддержка</span>
                         </div>
                     </div>
-                    <div class="marquee-slide">
-                        <div class="marquee-item">
-                            <span>Разработка сайтов</span>
-                        </div>
+                    <div class="swiper-slide">
                         <div class="marquee-item">
                             <span>SEO Продвижение</span>
                         </div>
-                        <div class="marquee-item">
-                            <span>UX/UI Дизайн</span>
-                        </div>
+                    </div>
+                    <div class="swiper-slide">
                         <div class="marquee-item">
                             <span>Видео и промо ролики</span>
                         </div>
+                    </div>
+                    <div class="swiper-slide">
                         <div class="marquee-item">
                             <span>Съемка 360° панорам</span>
                         </div>
-                        <div class="marquee-item">
-                            <span>SMM &amp; SMO</span>
-                        </div>
+                    </div>
+                    <div class="swiper-slide">
                         <div class="marquee-item">
                             <span>Техническая поддержка</span>
                         </div>
@@ -153,45 +132,41 @@
         <!-- section-about -->
         <section class="section section-about py-lg" id="about-us">
             <div class="container">
-                <div class="section-heading">
-                    <h2 class="section-title">О нас</h2>
+                <div class="section-heading d-lg-none">
+                    <div class="h2 section-title">О нас</div>
+                    <div class="fs-5 section-subtitle">Quisque maximus a sem vitae auctor, blandit eu erat.
+                        Aliquam interdum pulvinar laoreet.</div>
                 </div>
                 <div class="row gy-4">
 
                     <div class="col-lg-7">
                         <div class="row">
                             <div class="col-6">
-                                <div style="height: 60px;"></div>
-                                <img class="img-fluid" src="img/about-01.jpg" alt="">
+                                <div style="height: 50px;"></div>
+                                <img class="img-fluid rounded-2" src="img/about-01.jpg" alt="">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="img/about-02.jpg" alt="">
+                                <img class="img-fluid rounded-2" src="img/about-02.jpg" alt="">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-5 order-lg-first">
-                        <div class="promo-box mb-45">
+                        <div class="section-heading d-none d-lg-block">
+                            <h2 class="section-title">О нас</h2>
+                            <div class="fs-4 section-subtitle">Quisque maximus a sem vitae auctor, blandit eu erat.
+                                Aliquam interdum pulvinar laoreet.</div>
+                        </div>
+                        <div class="promo-box me-lg-5">
                             <div class="promo-container">
-                                <h6 class="box-title mb-15">OUR EXPERTISE</h6>
-                                <p class="fs-24 mb-30">Quisque maximus a sem vitae auctor, blandit eu erat.
-                                    Aliquam interdum pulvinar laoreet.</p>
-                                <p class="fs-16 mb-15">Quisque maximus a sem vitae auctor, blandit eu erat.
-                                    Aliquam interdum pulvinar laoreet. Vivamus ante sem, ornare a consectetur sit amet,
-                                    vitae lobortis magna malesuada.</p>
-                                <p class="fs-16 mb-15">Quisque maximus a sem vitae auctor, blandit eu erat.
-                                    Aliquam interdum pulvinar laoreet. Vivamus ante sem, ornare a consectetur sit amet,
-                                    vitae lobortis magna malesuada.</p>
+                                <!-- <p class="fs-24 mb-30"></p> -->
+                                <p class="mb-0">Всем привет! На связи студия веб-дизайна "8saitov". Уже более 5
+                                    лет делаем круговые 360-градусные панорамы на Яндекс-картах. Занимаемся разработкой
+                                    и SEO-продвижением сайтов и лендингов. У нас небольшая команда из 3 человек и мы не
+                                    берём в разработку большие порталы, а работаем прежде всего с малым и средним
+                                    бизнесом. Поэтому у нас очень доступные цены и нет просрочек по сдаче проектов.</p>
                             </div>
                         </div>
-                        <!-- <div class="promo-box mb-0">
-                            <div class="promo-container">
-                                <h6 class="box-title mb-15">OUR EXPERTISE</h6>
-                                <p class="box-description fs-16">Quisque maximus a sem vitae auctor, blandit eu erat.
-                                    Aliquam interdum pulvinar laoreet. Vivamus ante sem, ornare a consectetur sit amet,
-                                    vitae lobortis magna malesuada.</p>
-                            </div>
-                        </div> -->
                     </div>
 
                 </div>
@@ -205,69 +180,83 @@
                     <h2 class="section-title">Услуги</h2>
                 </div>
                 <div class="row gy-4">
-                    <div class="col-md-6 col-xl-4">
-                        <div class="promo-box promo-center">
-                            <div class="promo-big mb-25">
-                                <i class="bi bi-laptop promo-icon text-primary"></i>
+                    <div class="col-lg-4">
+                        <div class="card card-services h-100">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <i class="bi bi-laptop"></i>
+                                    <span>Разработка сайтов</span>
+                                </div>
+                                <div class="card-text">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh dictum.</div>
                             </div>
-                            <h6 class="box-title mb-15">WEB DESIGN</h6>
-                            <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
-                                dictum.</p>
+                            <div class="card-footer">
+                                <div class="card-price">от 10 000 руб.</div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-xl-4">
-                        <div class="promo-box promo-center">
-                            <div class="promo-big mb-25">
-                                <i class="bi bi-code-slash promo-icon text-primary"></i>
+                    <div class="col-lg-8">
+                        <div class="row gy-4 row-cols-1 row-cols-md-2">
+        
+                            <div class="col">
+                                <div class="card card-services">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <i class="bi bi-globe2"></i>
+                                            <span>SEO Продвижение</span>
+                                        </div>
+                                        <div class="card-text">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh dictum.</div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">от 8 000 руб.</div>
+                                    </div>
+                                </div>
                             </div>
-                            <h6 class="box-title mb-15">WEB DEVELOPMENT</h6>
-                            <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
-                                dictum.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                        <div class="promo-box promo-center">
-                            <div class="promo-big mb-25">
-                                <i class="bi bi-megaphone promo-icon text-primary"></i>
+        
+                            <div class="col">
+                                <div class="card card-services">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <i class="bi bi-camera"></i>
+                                            <span>Съемка 360° панорам</span>
+                                        </div>
+                                        <div class="card-text">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh dictum.</div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">1500 руб. за 1 панораму</div>
+                                    </div>
+                                </div>
                             </div>
-                            <h6 class="box-title mb-15">MARKETING</h6>
-                            <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
-                                dictum.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                        <div class="promo-box promo-center">
-                            <div class="promo-big mb-25">
-                                <i class="bi bi-hand-thumbs-up promo-icon text-primary"></i>
+        
+                            <div class="col">
+                                <div class="card card-services">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <i class="bi bi-camera-reels"></i>
+                                            <span>Видео и промо ролики</span>
+                                        </div>
+                                        <div class="card-text">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh dictum.</div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">от 3 000 руб.</div>
+                                    </div>
+                                </div>
                             </div>
-                            <h6 class="box-title mb-15">SOCIAL MEDIA</h6>
-                            <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
-                                dictum.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                        <div class="promo-box promo-center">
-                            <div class="promo-big mb-25">
-                                <i class="bi bi-highlighter promo-icon text-primary"></i>
+        
+                            <div class="col">
+                                <div class="card card-services">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <i class="bi bi-tools"></i>
+                                            <span>Техническая поддержка</span>
+                                        </div>
+                                        <div class="card-text">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh dictum.</div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="card-price">от 2 000 руб.</div>
+                                    </div>
+                                </div>
                             </div>
-                            <h6 class="box-title mb-15">GRAPHIC DESIGN</h6>
-                            <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
-                                dictum.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4">
-                        <div class="promo-box promo-center">
-                            <div class="promo-big mb-25">
-                                <i class="bi bi-globe2 promo-icon text-primary"></i>
-                            </div>
-                            <h6 class="box-title mb-15">SEO</h6>
-                            <p class="box-description">Quisque erat est, sagittis vitae ante id, imperdiet viverra nibh
-                                dictum.</p>
+        
                         </div>
                     </div>
                 </div>
@@ -280,127 +269,61 @@
                 <div class="section-heading">
                     <h2 class="section-title">Наши работы</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect effect-overlay">
-                                    <img class="img-fluid" src="img/ph1.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title">
-                                            <a href="#" class="project-title-wrapper">
-                                                <div class="overlay-title">
-                                                    <h5 class="project-title">PROJECT ONE</h5>
-                                                    <p class="project-skill">Web Design</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+                <div class="row row-cols-1 row-cols-md-2">
+
+                    <div class="col">
+                        <div class="card card-project">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </div>
+                            <img class="card-img" src="img/ph1.jpg" alt="">
+                            <div class="card-body">
+                                <div class="card-title"> Project one</div>
+                                <div class="card-subtitle">Subtitle project one</div>
+                                <div class="card-text">
+                                    <p>Some text about project? and another one</p>
                                 </div>
-                            </figure>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect effect-overlay">
-                                    <img class="img-fluid" src="img/ph2.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title">
-                                            <a href="#" class="project-title-wrapper">
-                                                <div class="overlay-title">
-                                                    <h5 class="project-title">PROJECT TWO</h5>
-                                                    <p class="project-skill">Design, Branding</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-faq -->
+        <section class="section section-faq py-lg bg-white" id="faq">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title">Частые вопросы</h2>
+                </div>
+                <div class="section-body">
+                    <div class="d-flex gap-5 flex-column" style="max-width: 700px;">
+                        <div class="item-faq">
+                            <div class="h5">Сколько длится разработка сайта?</div>
+                            <div>В среднем — от 4 до 6 недель на стандартную задачу. Однако сроки сильно зависят от: 1. Сложности проекта 2. Скорости обратной связи 3. Технических пожеланий.</div>
+                        </div>
+                        <div class="item-faq">
+                            <div class="h5">Вы работаете официально?</div>
+                            <div>Да, перед началом работы мы подписываем договор. Оплата принимается в качестве самозанятого.</div>
+                        </div>
+                        <div class="item-faq">
+                            <div class="h5">Что если у меня нет ТЗ?</div>
+                            <div>Отсутствие технического задания — не проблема. Я люблю предлагать свои концепции и варианты того, как можно решить дизайн задачу в бизнесе исходя из целей и общего видения проекта.</div>
+                        </div>
+                        <div class="item-faq">
+                            <div class="h5">Как узнать точную стоимость?</div>
+                            <div>Для того, чтобы назвать конечную стоимость, нам нужно провести небольшой созвон, на котором я узнаю все детали. После этого я составлю коммерческое предложение с вариантами цен и объемов работы.</div>
+                        </div>
+                        <div class="item-faq">
+                            <div class="h5">Как мы будем общаться?</div>
+                            <div>Сразу после начала работы мы создадим рабочий чат в Телеграм, где мы будем общаться с вами или вашей командой. Также в течение всей разработки у нас будет 3−4 онлайн-созвона по ключевым этапам.</div>
+                        </div>
+                        <div class="item-faq">
+                            <div class="h5">Что будет после завершения работы?</div>
+                            <div>После запуска я также всегда буду на связи в случае необходимых доработок и тех. поддержки сайта. В случае, если на сайте есть контент, который должен редактироваться вами самостоятельно, записываю подробные видео-инструкции.</div>
                         </div>
                     </div>
-
-                    <div class="col-md-6">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect effect-overlay">
-                                    <img class="img-fluid" src="img/ph3.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title">
-                                            <a href="#" class="project-title-wrapper">
-                                                <div class="overlay-title">
-                                                    <h5 class="project-title">PROJECT THREE</h5>
-                                                    <p class="project-skill">Branding</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect effect-overlay">
-                                    <img class="img-fluid" src="img/ph4.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title">
-                                            <a href="#" class="project-title-wrapper">
-                                                <div class="overlay-title">
-                                                    <h5 class="project-title">PROJECT FOUR</h5>
-                                                    <p class="project-skill">Web Design, Branding</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect effect-overlay">
-                                    <img class="img-fluid" src="img/ph5.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title">
-                                            <a href="#" class="project-title-wrapper">
-                                                <div class="overlay-title">
-                                                    <h5 class="project-title">PROJECT FIVE</h5>
-                                                    <p class="project-skill">Design</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="project">
-                            <figure class="portfolio-item">
-                                <div class="hovereffect effect-overlay">
-                                    <img class="img-fluid" src="img/ph6.jpg" alt="">
-                                    <div class="overlay">
-                                        <div class="hovereffect-title">
-                                            <a href="#" class="project-title-wrapper">
-                                                <div class="overlay-title">
-                                                    <h5 class="project-title">PROJECT SIX</h5>
-                                                    <p class="project-skill">Web Design</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -433,37 +356,50 @@
                         <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
                             <div class="text-center p-5">
                                 <div class="icon-lg icon-shape rounded-circle bg-light border mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div class="h6">Location</div>
-                                <p class="mb-0">Ahmedabad hall 74 Grand Avenue South, Cambridge, ON</p>
+                                <p class="mb-0">Москва, Кутузовский проспект, 32, корп. 1</p>
                             </div>
                         </div>
                         <div class="col-md-4 border-end-md border-bottom border-bottom-md-0">
                             <div class="text-center p-5">
                                 <div class="icon-lg icon-shape rounded-circle bg-light border mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-dock" viewBox="0 0 16 16">
-                                        <path d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"></path>
-                                        <path d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-window-dock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z">
+                                        </path>
+                                        <path
+                                            d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div class="h6">Date and time</div>
-                                <p class="mb-0">Tuesday, June 20, 2024 6:00 PM - 10:00 PM EDT</p>
+                                <p class="mb-0">Пн-Пт 9:00-18:00</p>
+                                <p class="mb-0">Сб-Вс выходной</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center p-5">
                                 <div class="icon-lg icon-shape rounded-circle bg-light border mb-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed-fill" viewBox="0 0 16 16">
-                                        <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-ticket-detailed-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z">
+                                        </path>
                                     </svg>
                                 </div>
                                 <div class="h6">Admission</div>
-                                <p class="mb-0">$79 per person Registration opens May 17, 2024</p>
+                                <p class="mb-0"><a href="#">Telegram</a></p>
+                                <p class="mb-0"><a href="#">Whats App</a></p>
                             </div>
-                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -475,17 +411,18 @@
     <footer class="footer">
         <div class="footer-widget-area">
             <div class="container">
-                <div class="row">
+                <div class="row gy-4">
                     <div class="col-lg-6">
                         <div class="widget widget-contact">
                             <!-- <img src="img/logo-white.svg" class="footer-logo" alt="logo"> -->
                             <!-- <div class="widget-title">GET IN TOUCH</div> -->
-                             <div class="mb-20">
-                                 <a href="tel:+79997772200" class="fs-26 fw-bold text-white">+7 999 777-22-00</a>
-                             </div>
-                             <div class="mb-20">
-                                 <a href="mailto:hello@yoursite.com" class="fs-26 fw-bold text-white">hello@yoursite.com</a>
-                             </div>
+                            <div class="mb-20">
+                                <a href="tel:+79997772200" class="fs-26 fw-bold text-white">+7 999 777-22-00</a>
+                            </div>
+                            <div class="mb-20">
+                                <a href="mailto:hello@yoursite.com"
+                                    class="fs-26 fw-bold text-white">hello@yoursite.com</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 order-lg-first">
@@ -526,7 +463,6 @@
     <!-- JavaScript -->
     <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="vendors/fancybox/fancybox.umd.js"></script>
     <script src="app.js"></script>
 
 </body>
