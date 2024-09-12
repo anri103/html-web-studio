@@ -23,10 +23,18 @@
     --bs-gray-900: #212529;
     --bs-primary: #111;
     --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #f2f6f9;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
     --bs-primary-rgb: 17, 17, 17;
     --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 242, 246, 249;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
     --bs-light-rgb: 248, 249, 250;
     --bs-dark-rgb: 205, 196, 179;
     --bs-white-rgb: 255, 255, 255;
@@ -69,7 +77,7 @@
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
     font-family: var(--bs-font-title);
     font-weight: 400;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
 }
 
@@ -89,7 +97,7 @@
     --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     --bs-btn-disabled-opacity: 0.65;
     --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
-    letter-spacing: .02rem;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
@@ -231,12 +239,22 @@
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
 }
 
 .card-footer:last-child {
     border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+}
+
+/* badge */
+
+.badge {
+    --bs-badge-padding-x: 1.25em;
+    --bs-badge-padding-y: 0.5em;
+    --bs-badge-font-size: 0.75em;
+    --bs-badge-font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 /* swiper */
@@ -312,6 +330,10 @@
 
 .section-heading {
     margin-bottom: 100px;
+}
+
+.section-subtitle {
+    margin-bottom: 0;
 }
 
 /* header */
@@ -402,7 +424,7 @@
     font-family: var(--bs-font-title);
     font-size: 1rem;
     font-weight: 500;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
 }
@@ -514,7 +536,7 @@
     white-space: nowrap;
     font-family: var(--bs-font-title);
     font-weight: 700;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     font-size: 2rem;
 }
@@ -531,13 +553,36 @@
 
 /* section-services */
 
+/* .section-services {
+    overflow: hidden;
+} */
+
+/* .section-services > .container {
+    max-width: 100%;
+} */
+
+/* .swiperServices {
+    overflow: visible;
+} */
+
+.swiperServices .swiper-slide {
+    width: 400px;
+    height: auto;
+}
+
+.swiperServices .card-services {
+    height: 100%;
+}
+
 .card-services {
     --bs-card-spacer-x: 2rem;
     --bs-card-cap-padding-x: 2rem;
+    --bs-card-border-color: transparent;
     --bs-card-bg: #fff;
     --bs-card-cap-bg: var(--bs-card-bg);
     height: 100%;
     font-size: 0.875rem;
+    box-shadow: var(--bs-box-shadow-sm);
 }
 
 .card-services .card-body {
@@ -562,7 +607,7 @@
     font-family: var(--bs-font-title);
     font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     background-color: #f2f6f9;
 }
 
@@ -576,6 +621,17 @@
     --bs-card-spacer-y: 2.5rem;
     --bs-card-spacer-x: 2rem;
     --bs-card-bg: #fff;
+}
+
+.card-project .card-specs {
+    display: flex;
+    gap: 0.5rem 1rem;
+}
+
+.card-project .card-specs .badge {
+    --bs-badge-color: var(--bs-body-color);
+    --bs-badge-border-radius: 50rem;
+    background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity, 1));
 }
 
 /* section-contacts */
@@ -609,7 +665,7 @@
     font-family: var(--bs-font-title);
     font-size: 1.125rem;
     font-weight: 500;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     margin-bottom: 25px;
 }

@@ -55,3 +55,9 @@ const swiperMarquee = new Swiper('.swiperMarquee', {
     allowTouchMove: false,
     disableOnInteraction: true
 });
+
+// swiper swiperServices
+const swiperServices = new Swiper('.swiperServices', {
+    slidesPerView: 'auto',
+    spaceBetween: 30
+});
